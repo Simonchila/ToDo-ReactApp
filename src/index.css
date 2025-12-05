@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff); /* smooth aqua-blue gradient */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.to-do-list {
+    text-align: center;
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+input[type="text"] {
+    font-size: 1.5rem;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 60%;
+    max-width: 350px;
+    outline: none;
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-button {
+    background-color: #28a745;
+}
+
+.add-button:hover {
+    background-color: #1e7e34;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.move-button-up {
+    background-color: #fd7e14;
+}
+
+.move-button-up:hover {
+    background-color: #e8590c;
+}
+
+.move-button-down {
+    background-color: #007bff;
+}
+
+.move-button-down:hover {
+    background-color: #0056b3;
+}
+
+ol {
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.delete-button, .move-button-up, .move-button-down {
+    margin-left: 8px;
+}
